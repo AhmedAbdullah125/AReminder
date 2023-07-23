@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ahmed Abdullah</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Reminder</h1>
+        <div class="row" id="notes">
+            <div class="col col-md-6 col-sm-12 col-12 m-1 i-cont" id="active">
+                <h2 class="h2">Active Notes</h2>
+
+                <div class="popup">
+                    <i class="fa-solid fa-plus ies gareeb" id="addNote" onclick="myFunction()"></i>
+                    <div class="popuptext" id="myPopup">
+                        <input type="text" class="form-control m-2" placeholder="Note Title" id="titleInput">
+                        <input type="text" class="form-control m-2" placeholder="Note Body" id="bodyInput">
+                        <p class="text-danger" id="test"></p>
+                        <button class="btn btn-success m-3" onclick="addNote()" id="btn1">Add</button>
+                    </div>
+                </div>
+                <div class="cartona" id="cartona"></div>
+            </div>
+            <div class="col col-md-5 col-sm-12 col-12 m-1" id="activ">
+                <h2 class="h2">Completed Notes</h2>
+                <div class="cartona" id="cartona2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
